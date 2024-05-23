@@ -134,7 +134,9 @@ The aggregated data table (population_climate_1900_2010) stores the changes of t
 
 ### Chart 1
 
-```{r, echo = FALSE, code = readLines("chart3.R")}
+```{r}
+source("./chart_2_boxplot")
+
 ```
 ### Detailed Analysis of Climate Change Indicators by Geographic Coordinates
 ## Purpose:
