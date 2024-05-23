@@ -142,6 +142,7 @@ plat_chart
 tlon_chart
 plon_chart
 ```
+
 ### Detailed Analysis of Climate Change Indicators by Geographic Coordinates
 ## Purpose:
 The purpose of these charts is to investigate the relationships between geographic coordinates—latitude and longitude—and climate change indicators, specifically temperature and precipitation changes, across different U.S. regions from 1900 to 2010.
@@ -157,7 +158,7 @@ Each chart employs scatter plots, color-coded by region, to differentiate data p
 ```{r}
 source("./chart_2_boxplot.R")
 
-boxplot
+boxplot1
 ```
 # Chart 2 - Boyan 
 ### Purpose
