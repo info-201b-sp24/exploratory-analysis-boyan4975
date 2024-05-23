@@ -35,6 +35,6 @@ weather <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/explorator
 # Joint the weather df and population df, sort by region then by Population_Change_Percentage
 population_climate_1900_2010 <- population_with_region %>% left_join(weather, by = c("City" = "Name"))  %>%
   relocate(Temp_Change, Prcp_Change, .after = Population_Change_Percentage) %>% select(c("City", "ST", "Region", "Population_Change", "Population_Change_Percentage", "Temp_Change", "Prcp_Change", "LAT", "LON")) %>%
-  ungroup() %>% arrange(desc(Region), -Population_Change_Percentage) %>% write_csv("/Users/cdhui/info-201/exploratory-analysis-boyan4975/data/population_climate_1900_2010.csv")
+  ungroup() %>% arrange(desc(Region), -Population_Change_Percentage) 
 
 
