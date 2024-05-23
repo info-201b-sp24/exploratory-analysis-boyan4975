@@ -6,7 +6,7 @@ library(ggthemes)
 # All data preparation steps have already been executed and the final dataframe is `population_climate_1900_2010`
 
 # Creating the enhanced box plot
-ggplot(population_climate_1900_2010, aes(x = ST, y = Population_Change_Percentage, fill = Temp_Change)) +
+boxplot <- ggplot(population_climate_1900_2010, aes(x = ST, y = Population_Change_Percentage, fill = Temp_Change)) +
   geom_boxplot(outlier.shape = 8, outlier.color = "red", outlier.size = 2) +  # Redefine outlier properties
   geom_jitter(width = 0.2, alpha = 0.5, color = "black") +  # Adding jitter to show individual data points
   facet_wrap(~Region, scales = "free_x") +  # Faceting by Region
