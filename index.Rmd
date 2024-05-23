@@ -123,12 +123,40 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ### Chart 2
 
-Include a chart
+```{r}
 
-Describe why you chose this chart and what information it reveals
+```
+
 
 ### Chart 3
 
-Include a chart
+```{r}
+source("./anaylsis.R")
 
-Describe why you chose this chart and what information it reveals
+Phoniex_plot
+```
+
+```{r}
+source("./anaylsis.R")
+
+Astoria_plot
+```
+
+# Chart 3- Amen
+
+For these graphs, we chose to focus on cities with the highest and lowest temperature changes. We specifically targeted the western region, selecting Arizona and Oregon—Arizona being in the Southwest and Oregon in the West. The average temperature of Phoenix was included because it shows significant temperature changes since the early 1900s, making it one of the hottest cities. In contrast, the average temperature of Astoria, which has the lowest temperature change, was also included. We wanted to compare these two cities, given their relatively close geographic proximity within the region, to highlight the stark differences in their temperature trends.
+
+
+# Includes insights (what information is revealed)
+
+
+In the chart showing the average temperature of Phoenix, we observe that the temperature hasn't dipped below 65 degrees for over 120 years, consistently maintaining a warm climate. Over time, this temperature has continued to rise.
+
+
+In contrast, the chart displaying the average temperature of Astoria reveals significantly lower temperatures compared to Phoenix. The average temperature in Astoria ranges from 45 to 55 degrees. Although there is a dip at some point, the temperature has generally remained within this range.
+
+
+# Visualization type makes sense for data
+
+
+Line charts makes sense for the data because they best represent the information we want to share clearly, especially since we are comparing data with high and low values.
