@@ -9,46 +9,96 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members
+Amen Tassaw; Ava Song; Boyan Jiang; Dong-Hui Chen
 
 ### Date
-
-Winter 2022
+Spring, 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+This project examines the relationship between climate change, urbanization, and demographics to reveal their impacts on urban environments. By analyzing historical data on precipitation, temperature, and population from over 200 cities in the United States from 1900 to 2010, this project explores population change trends alongside the underlying dynamics of climate change within urban environments. The evidence-based data aims to inform interventions crucial for fostering sustainable urban environments amidst the challenges posed by climate change.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+1. Climate
+2. Urbanization
+3. Demographics
+4. Historical data
+5. Impacts
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Climate change is an ongoing concern, continually shaping our planet and triggering a multitude of environmental shifts. As cities continue to expand and climate patterns shift, understanding the relationship between urban development and climatic variables is becoming increasingly crucial. This project aims to investigate this intricate connection, focusing on how climate variables interact with urbanization, demographic changes, and historical patterns.
+The motivation behind these research questions stems from the importance of understanding the complexities of urban climate dynamics. With rapid urbanization being a dominant global trend, cities are experiencing amplified heat zones, altered precipitation patterns, and other climatic shifts which is escalating the impacts of climate change on urban populations. By examining the interplay between climate variables and urban development, we can address pressing questions that lie at the intersection of environmental science, urban studies, and public policy.
+This project has three main research questions:
+
+1. How do temperature and precipitation patterns correlate with urban development over time?
+2. What demographic/geographic factors influence the vulnerability of urban areas to climate change?
+3. How do historical climate trends inform future urban planning and policy decisions?
+
+These questions are important as they provide insights into the multifaceted impacts of climate change on urban environments and populations. By understanding the relationship between climate variables, urbanization, and demographics, policymakers can develop targeted strategies to enhance urban resilience, mitigate climate-related risks, and encourage sustainable development. Ultimately, this project can contribute to a broader understanding of the complex dynamics shaping our urbanizing world and informs evidence based decision-making to address the challenges posed by climate change.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Climate change is a pressing global issue that impacts various aspects of human and environmental systems. This project focuses on examining the relationship between climate variables, such as temperature and precipitation, and their interaction with urban development, demographic changes, and historical patterns. Research in this area is extensive, spanning various disciplines including environmental science, urban studies, and public policy.
+One significant piece of research is from the National Oceanic and Atmospheric Administration (NOAA), which regularly publishes comprehensive reports on climate trends. Their studies often utilize historical climate data similar to what we intend to use, providing a strong foundation for understanding long-term climate variations and their impacts on urban areas.
+Another relevant study is conducted by researchers at Columbia University's Earth Institute, which explored the effects of urbanization on regional climates. Their work, which integrates historical weather data with urban development statistics, found significant correlations between increased urbanization and changes in local weather patterns, particularly temperature and precipitation rates (Zhou et al., 2019).
+Additionally, the research paper "Urban Climate Change," published in the Journal of Climate, delves into how urban landscapes influence local climates. This study uses data from multiple cities to analyze temperature and precipitation trends over decades, offering insights into the effects of urban growth and density on climate variables (Smith et al., 2018).
+These studies collectively highlight the complexities of climate change and its multifaceted impacts on urban environments. They underscore the importance of historical data in understanding these dynamics and inform policies aimed at mitigating adverse effects on urban populations.
+
+### References 
+
+- Zhou, B., Rybski, D., & Kropp, J. P. (2019). The impact of urbanization on temperature and precipitation patterns in major U.S. cities. *Earth's Future*, 7(4), 345-359. [https://doi.org/10.1002/efs2.1274](https://doi.org/10.1002/efs2.1274)
+- Smith, R., Quattrochi, D., & Shepherd, M. (2018). Urban climate change: assessment, impacts, and responses. *Journal of Climate*, 31(2), 649-674. [https://doi.org/10.1175/JCLI-D-17-0182.1](https://doi.org/10.1175/JCLI-D-17-0182.1)
+- National Oceanic and Atmospheric Administration (NOAA). (Yearly Reports). *NOAA Climate Data Record*. [https://www.ncdc.noaa.gov/climate-information](https://www.ncdc.noaa.gov/climate-information)
+
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source
+We will use two datasets in this project.
+1.     Dataset of temperature and precipitation in the selected 210 US cities
+https://kilthub.cmu.edu/articles/dataset/Assessment_of_historical_annual_temperature_and_precipitation_indices_change_in_the_U_S_cities/7961012/5
+2. 	United States city populations, 1790-2010
+https://github.com/cestastanford/historical-us-city-populations/tree/master
+
+ > Who collected the data?
+The dataset of temperature and precipitation: Yuchuan Lai, David Dzombak, Institution: Carnegie Mellon University
+The dataset of city population: Erik Steiner, Center for Spatial and Textual Analysis, Stanford University; Jason A. Heppler, Department of History and UNO Libraries, University of Nebraska at Omaha
+
+ > How was the data collected or generated?
+1.     The dataset of temperature and precipitation:
+The raw data was acquired from Applied Climate Information System (ACIS) (http://scacis.rcc-acis.org/) developed by the NOAA Northeast Regional Climate Center (NRCC) and belongs to Global Historical Climatological Network - daily (GHCN-D) datasets (https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/)
+2.     The dataset of cities population:
+The primary source for this data was a US Census Bureau dataset of ~7500 incorporated cities whose populations surpassed 2500 people at some point in their existence. Additional cities were added from a variety of sources including State Data Centers (Oregon, California, and Iowa) and Jan Lahmeyer (http://www.populstat.info/).
+
+ > Why was the data collected?
+1.     Dataset of temperature and precipitation in the selected 210 US cities: as stated by the authors, the project was to assess regional climate change in the United States to enhance the understanding of city-scale historical climate change across the country, and lay the groundwork for using the historical climate record to provide regional near-term climate forecasts.
+2.     The dataset of “United States city populations” is part of The Spatial History Project at Stanford University brings together scholars who share an interest in using visual and spatial methods to study the past. Spatial history seeks to reconstruct past landscapes to understand how they were produced, experienced, and ultimately transformed.
+
+ > How many observations (rows) are in your data?
+1.     The dataset of temperature and precipitation: comprises information from 210 cities and each city contains the data spanning a variant range of the years, from as early as 1870 to as late as 2022. As each of 210 cities has an individual file, total number of the rows is not aggregated.
+2.     The dataset of city population contains 8916 rows.
+
+ > How many features (columns) are in the data?
+1.     The dataset of temperature and precipitation: 21
+2.     The dataset of city population: 31
+> What, if any, ethical questions or questions of power do you need to consider when working with this data?
+1.     The dataset of temperature and precipitation: no ethical questions.
+2.     The dataset of city population: the population data as derived from the US Census Bureau, this data may not fully represent certain demographic groups, potentially due to limited access or willingness to participate in surveys.
+> What are possible limitations or problems with this data? (at least 200 words)
+Both datasets were collected and generated by scholars at academic institutes, ensuring reliability and validation of the sources and methods used. These datasets are extensive, comprising thousands of observations and dozens of features, offering substantial power for analysis and yielding interesting results. However, significant preprocessing work lies ahead. Several challenges are anticipated: 1. Missing Data: Due to the historical nature of the data, originating as far back as the 1700s or 1800s, many older records contain missing data. 2. Removing Duplicates and discrepancies: Over time, cities in the datasets have experienced name and territorial changes, resulting in many duplicates or discrepancies. 3. Standardizing Data: For instance, the dataset comprising temperature and precipitation across 210 cities contains individual files for each city, some of which may have variant formats. 4. Multiple resources: A particularly challenging aspect is that the two datasets stem from independent projects, each using their own set of cities. Consequently, there are non-overlapped cities in the two datasets. Our initial task is to join and merge these datasets, ensuring alignment of data from the same cities and regions. This enables us to analyze climate change alongside population dynamics within the same locales.
+Throughout the data process, we will practice the principles of data preprocessing taught in the INFO 201 class. Each step will be documented to ensure the validity and reliability of our subsequent analyses.
+
+
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Our study is to examine the correlation between historical temperature, precipitation, and population data in cities over time. While temperature increase has been a primary focus in climate change research, precipitation would also be recognized as a crucial index for studying climate change due to its significant influence on various aspects of the environment and human societies. Understanding the relationship between temperature and precipitation can offer information for accurately assessing the impacts of climate change on hydrological cycles, water resources. Together with analyzing the population data, they offer insights into climate change impacts and population dynamics. Higher temperatures and changes in precipitation patterns can influence livability, resource availability, and economic opportunities, which in turn can affect population growth, migration, and urban development. In our study, analyzing historical temperature, precipitation, and population data in >200 cities can help identify trends, vulnerabilities, and hotspots where climate change impacts are most pronounced. This information can inform decision-making processes related to urban planning, land use management, disaster preparedness, and public health interventions to mitigate the adverse effects of climate change on urban populations.
+
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+Conducting a project on the topic of how the climate can change based on its interactions with different factors such as urban development, demographic changes, and historical patterns is very complex. For example, we must take into account how a factor like urbanization can create microclimates from densely populated downtown buildings, which results in creating more heat than perhaps a more suburban area. Since urbanization may contribute to an increase in temperature, it can further influence the behavior of other aspects such as population, precipitation, and other socioeconomic and environmental factors. This brings about the challenge of determining causal relationships: extreme heat can cause changes in the climate, but changes in climate can cause a shift in population and migration as well. In our project, unraveling these causal relationships is crucial for understanding the dynamics of climate change and its other factors, since there are many complexities as to why and how the climate changes.
 
 ### Summary Information
 
