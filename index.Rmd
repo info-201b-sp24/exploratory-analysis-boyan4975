@@ -134,14 +134,17 @@ The aggregated data table (population_climate_1900_2010) stores the changes of t
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-```{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart3.R")}
 ```
+### Detailed Analysis of Climate Change Indicators by Geographic Coordinates
+## Purpose:
+The purpose of these charts is to investigate the relationships between geographic coordinates—latitude and longitude—and climate change indicators, specifically temperature and precipitation changes, across different U.S. regions from 1900 to 2010.
+
+## Insight:
+The scatter plots reveal no clear linear relationship between geographic coordinates and climate changes. Variability in temperature and precipitation changes across both latitude and longitude suggests that factors beyond mere geographic location, such as regional climatic conditions, topography, and anthropogenic influences, play significant roles. The absence of straightforward correlations highlights the complexity and multifaceted nature of climate dynamics.
+
+## Visualization Type:
+Each chart employs scatter plots, color-coded by region, to differentiate data points based on their geographic origin. This visualization strategy facilitates the identification of regional patterns or anomalies, enhancing the analysis by providing a clear visual representation of how geographic coordinates might influence climate changes.
 
 ### Chart 2
 
