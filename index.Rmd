@@ -102,13 +102,35 @@ Conducting a project on the topic of how the climate can change based on its int
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+```{r, echo=FALSE}
+summary_info <- read.csv("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-boyan4975/main/data/summaries.csv")
+```
+
+
+We summarized the data by region, for median, highest and lowest values for each of features of population, temperature and precipitation. The summary table below shows these values
+
+```{r, echo=FALSE}
+names(summary_info) <- sub('^region.', '', names(summary_info))
+names(summary_info) <- gsub('_', ' ', names(summary_info))
+summary_pivot <- as.data.frame(t(summary_info))
+summary_pivot <- summary_pivot[-1,]
+names(summary_pivot) <-NULL
+knitr::kable(summary_pivot, format = "markdown")
+
+```
+The summarized data demonstrate that the population changes in the four geographic regions were not skewed, with larger changes in the West region (median 2187% increase) and smaller change in the Northeast region (median 21% increase) and decrease in many cities. The temperature and precipitation changes seems negatively related to the population changes, with the Northeast region has the biggest changes in both temperature and precipitation. 
 
 ### Table
 
-Include a table of aggregate information
+The aggregated table is
 
-Describe why you included the table and what information it reveals
+```{r, echo=FALSE}
+aggregate_table <- read.csv(url("https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-boyan4975/main/data/population_climate_1900_2010.csv"))
+summary(aggregate_table)
+```
+
+
+The aggregated data table (population_climate_1900_2010) stores the changes of the population, temperature, and precipiatation in 210 cities in USA from 1900 to 2010. The table has data of `r nrow(aggregate_table)` observations. The entry for each city has `r ncol(aggregate_table)` features. We especially grouped the cities by geographic regions of West, MiddleWest, South and  The following table show generic charateristics of the table.
 
 ### Chart 1
 
