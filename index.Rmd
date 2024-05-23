@@ -135,7 +135,6 @@ The aggregated data table (population_climate_1900_2010) stores the changes of t
 ### Chart 1
 
 ```{r}
-source("./chart_2_boxplot")
 
 ```
 ### Detailed Analysis of Climate Change Indicators by Geographic Coordinates
@@ -150,8 +149,10 @@ Each chart employs scatter plots, color-coded by region, to differentiate data p
 
 ### Chart 2
 
-```{echo = FALSE, code = readLines("chart_2_boxplot.R")}
+```{r}
+source("./chart_2_boxplot.R")
 
+boxplot
 ```
 # Chart 2 - Boyan 
 ### Purpose
